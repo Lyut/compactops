@@ -23,6 +23,7 @@ Start up the API with npm start and make sure the endpoint connection is working
 
 Now you can create accounts sending POST requests to /Users/, or you can tweak it to work with your own API.
 You will be greeted by the Gantt chart until your session token expires.
+
 <img src="https://i.imgur.com/vmZC2yU.png">
 
 You may now run 'build' from Sencha Cmd.
