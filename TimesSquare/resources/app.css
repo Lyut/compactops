@@ -1,0 +1,424 @@
+.icon-key{background-image: url(icons/Logon_LHblue.png)}
+.icon-ops{background-image: url(images/icons/netline_ops-16x16.png)}
+.icon-searchleg, .icon-searchLeg{background-image: url(icons/search_LHblue.png)}
+.icon-apply{background-image: url(../icons/apply_LHblue.png)}
+.icon-aircraft-PHYSICAL{background: url(../icons/Aircraft_state_physical.png) no-repeat; padding-left: 16px;}
+.icon-aircraft-OVERFLOW{background: url(../icons/Aircraft_state_overflow.png) no-repeat; padding-left: 16px;}
+.icon-aircraft-LOGICAL{background: url(../icons/Aircraft_state_logical.png) no-repeat; padding-left: 16px;}
+.icon-stop{background-image: url(../icons/stop_LHblue.png);}
+
+.icon-accept {background-image: url(../icons/accept_LHblue.png);}
+.icon-decline {background-image: url(../icons/Decline_LHblue.png);}
+.x-tbar-loading {background-image: url(../icons/Reload_LHblue.png) !important;}
+.x-tbar-page-next {background-image: url(../icons/next_page_LHblue.png) !important;}
+.x-tbar-page-last {background-image: url(../icons/jump_to_last_LHblue.png) !important;}
+.x-tbar-page-first {background-image: url(../icons/jump_to_first_LHblue.png) !important;}
+.x-tbar-page-prev {background-image: url(../icons/previous_page_LHblue.png) !important;}
+
+.icon-key-login {
+    background-image: url(images/icon-key.png);
+}
+
+.ops-bold {
+    font-weight: bold !important;
+}
+/*background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#cfb7b5),color-stop(100%,#8a6a67)) !important; */
+.sch-lockedview .x-grid-cell-inner {
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#f9f9f9),color-stop(100%,#f1d3f1)) !important;
+}
+
+.x-grid-cell-inner {
+    background:#ffffff url(images/gantt-resource-transparent.png) repeat-x left top;
+}
+
+.x-form-uppercase input {
+    text-transform: uppercase;
+}
+
+.x-form-uppercase input::placeholder {
+    text-transform: none;
+}
+.x-form-uppercase input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-transform: none;
+}
+.x-form-uppercase input::-moz-placeholder { /* Firefox 19+ */
+    text-transform: none;
+}
+.x-form-uppercase input:-ms-input-placeholder { /* IE 10+ */
+    text-transform: none;
+}
+.x-form-uppercase input:-moz-placeholder { /* Firefox 18- */
+    text-transform: none;
+}
+
+.x-event-wrapper {
+    position: absolute;
+    border-width: 1px;
+    z-index: 10;
+}
+
+.x-event-ontop-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    overflow: visible;
+}
+
+.x-event-usermarker-wrapper {
+    display: inline-block;
+    position: relative;
+    float: left;
+
+    margin: 0;
+    padding: 0;
+}
+
+.x-event-usermarker {
+    display: inline-block;
+
+    margin: 0 2px 0 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    background-color: transparent;
+
+    text-align: center;
+}
+
+.x-event-systemmarker-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+
+    margin: 0;
+    padding: 0;
+}
+
+.x-event-systemmarker {
+    display: inline-block;
+
+    padding: 1px;
+
+    background-color: transparent;
+
+    text-align: center;
+    float: right;
+}
+
+.x-event-remark-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+
+    margin: 0;
+    padding: 0;
+}
+
+.x-event-remark {
+    display: inline-block;
+
+    padding: 1px;
+
+    background-color: transparent;
+
+    text-align: center;
+    float: right;
+}
+
+.ops-remark-tooltip-text {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * GridFilters Styles
+ */
+
+.ux-filtered-column {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.ux-gridfilter-text-icon {
+    background-image: url(../images/ux/grid/find.png) !important;
+}
+
+/*
+ * RangeMenu Styles
+ */
+
+.ux-rangemenu-icon {
+    display: block;
+    height: 16px;
+    background: no-repeat 5px center;
+}
+
+.ux-rangemenu-gt {
+    background-image: url(../images/ux/grid/greater_than.png) !important;
+}
+
+.ux-rangemenu-lt {
+    background-image: url(../images/ux/grid/less_than.png) !important;
+}
+
+.ux-rangemenu-eq {
+    background-image: url(../images/ux/grid/equals.png) !important;
+}
+
+
+/* Selection View */
+
+/* Gantt */
+
+.icon-jump-first {
+    background-image: url('../icons/jump_to_first_LHblue.png');
+}
+
+.icon-jump-last {
+    background-image: url('../icons/jump_to_last_LHblue.png');
+}
+
+.icon-jump-next {
+    background-image: url('../icons/next_page_LHblue.png');
+}
+
+.icon-jump-now {
+    background-image: url('../icons/jump_now_LHblue.png');
+}
+
+.icon-jump-previous {
+    background-image: url('../icons/previous_page_LHblue.png');
+}
+
+.sch-event {
+    border-color: #585858;
+}
+
+.event-leg-scheduled {
+    top: 10px;
+    height: 20px;
+}
+
+.event-leg-scheduled.overlap-1 {
+    top: 6px;
+}
+
+.event-leg-scheduled.overlap-2 {
+    top: 2px;
+}
+
+.event-check-planned {
+    top: 10px;
+    height: 20px;
+}
+
+.event-check-planned.overlap-1 {
+    top: 6px;
+}
+
+.event-check-planned.overlap-2 {
+    top: 2px;
+}
+
+
+.event-leg-actual {
+    top: 30px;
+    height: 20px;
+}
+
+.event-leg-actual.overlap-1 {
+    top: 34px;
+    height: 20px;
+}
+
+.event-leg-actual.overlap-2 {
+    top: 38px;
+    height: 20px;
+}
+
+.event-check-unplanned {
+    top: 30px;
+    height: 20px;
+}
+
+.event-check-unplanned.overlap-1 {
+    top: 34px;
+}
+
+.event-check-unplanned.overlap-2 {
+    top: 38px;
+}
+
+.event-atc-slot {
+    top: 5px;
+    height: 49px;
+}
+
+.event-atc-slot-slc {
+    top: 5px;
+    height: 49px;
+    border-style: dotted;
+}
+
+.event-atc-slot-slc > .sch-event {
+    border: none;
+}
+
+.sch-event-inner {
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.event-leg-name {
+    display: inline-block;
+    margin:0 auto;
+}
+
+.event-leg-departure {
+    float:left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.event-leg-arrival {
+    float:right;
+    margin-right: 3px;
+}
+
+.event-atc-slot-state {
+    position: absolute;
+    width: 100%;
+}
+
+.event-atc-slot-time {
+    position: absolute;
+    width: 100%;
+    margin-top:29px;
+}
+
+div.sch-event-selected, div.sch-event-hover.sch-event-selected {
+    z-index: 11;
+    font-weight: bold;
+    border-color: black !important;
+}
+
+div.sch-event-selected.sch-event-init-selected {
+    z-index: 12;
+}
+
+.sch-simple-timeaxis .sch-simple-timeheader {
+    padding: 0;
+}
+
+.sch-column-header {
+    padding: 4px 3px 5px;
+}
+
+/* Gantt locked grid, e.g. resources */
+div.sch-schedulerpanel div.x-grid-inner-locked .x-grid-cell-inner {
+    font-size: 14px;
+    line-height: 59px;
+    /*background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#f9f9f9),color-stop(100%,#e3e4e6)); */
+    background:#ffffff url(../images/gantt-resource-transparent.png) repeat-x left top;
+}
+
+div.sch-schedulerpanel .x-item-disabled .x-grid-checkcolumn { 
+    opacity: 1; 
+} 
+
+div.sch-schedulerpanel div.x-grid-inner-locked .x-grid-cell-first .x-grid-cell-inner {
+    font-size: 20px;
+}
+
+.sch-schedulerpanel .x-grid-with-col-lines .x-grid-cell {
+    border-bottom: 1px solid grey;
+}
+
+/* detail view fieldset border*/
+.dwFieldset {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* border less textfield */
+.borderLess input {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* gantt timeline */
+.sch-timeline {
+    /*border-width : 0 0 0 2px;
+    margin-left  : -2px;*/
+    border-style : solid !important;
+    border-color : red !important;
+    z-index      : 2 !important;
+}
+
+/* HP-9858 */
+.x-docked {
+    z-index: 0;
+}
+
+/* OTIDLSY-84 / HP-9873 */
+/* day boundaries */
+.sch-column-line-db {
+    border-left: 1px solid #000000;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -1px;
+    z-index:0;
+    pointer-events:none;
+}
+
+/* Gantt Airport */
+.event-airport {
+    position: absolute;
+    text-align: center;
+    margin-top: -12px;
+    width: 50px;
+    z-index: 9;
+}
+
+.sch-tip > .x-tip-body {
+    height: auto !important;
+}
+.tooltip-under-loading {
+    visibility: hidden !important;
+}
+
+/** OTIDLSY-155 : LEG DETAILS MARKERS **/
+
+.details-ceiling-label-cell {
+    vertical-align: top;
+    padding: 3px;
+    width: 65px;
+}
+
+.details-marker-icon {
+    display: inline-block;
+    position: relative;
+
+    top: -1px;
+    height: 16px;
+    width: 16px;
+
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 1px solid #2e2d2d;
+}
+
+
+/* OTIDLSY-212 fix */
+.x-event-wrapper > .x-event-tooltipable {
+    width: 100%;
+}
