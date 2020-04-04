@@ -69,7 +69,7 @@ Ext.define('TimesSquare.utils.Gantt',{
             {
                 xtype: 'app-main',
                 region: 'center',
-                height: window.innerHeight //TODO: FIX, find a more elegant way
+                height: window.innerHeight - 50//TODO: FIX, find a more elegant way
                 //   layout: 'fit',
             }]
         });
