@@ -158,7 +158,7 @@ Ext.define('TimesSquare.view.login.LoginController', {
         user.save({
             failure: function (user, request) {
                 if (request.error.status == 401) {
-                    TimesSquare.utils.Login.showException("iocc.sec.unexpected.exception", "Error in Operation!");
+                    TimesSquare.utils.Login.showException("iocc.sec.authentication.failed", "Error in Operation!");
                     loginView.setLoading(false);
                 }
                 else {
