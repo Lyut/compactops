@@ -10,6 +10,35 @@ Ext.define('User', {
     }
 });
 
+
+Ext.define('TimesSquare.utils.Login', {
+    singleton: true,
+
+    messageMap: {
+        "iocc.sec.unexpected.exception": "An unexpected server error has occurred while processing your request! Please try again later or contact the system administrator!",
+        "iocc.sec.authentication.failed": "Authentication failed: username or password invalid!",
+        "iocc.sec.connection.error": "Connection to security service could not be created!"
+    },
+
+    showException: function(message, title, icon) {
+        if (!title)
+            title = "Error in Service!";
+        if (!icon)
+            icon = Ext.MessageBox.ERROR;
+        if (TimesSquare.utils.Login.messageMap == null)
+            Ext.log.warn("Could not find messageMap property - only default error keys will be translated! See TimesSquare.utils.Login.messageMap for default values.")    
+        else {
+            Ext.MessageBox.show({
+                title: title,
+                msg: TimesSquare.utils.Login.messageMap[message],
+                buttons: Ext.MessageBox.OK,
+                icon: icon
+            });
+        }
+    }
+});
+
+
 Ext.define('TimesSquare.utils.Gantt',{
     singleton: true,
     
@@ -112,12 +141,7 @@ Ext.define('TimesSquare.view.login.LoginController', {
                 },
                 failure: function (transport) {
                     //alert("Error: " + transport.responseText);
-                    Ext.MessageBox.show({
-                        title: 'Error in Service!',
-                        msg: 'An unexpected error occurred while trying to process your request!<br/>Please try again or notify the system administrator if the problem persists!',
-                        buttons: Ext.MessageBox.OK,
-                        icon: Ext.MessageBox.ERROR
-                    });
+                    TimesSquare.utils.Login.showException("iocc.sec.unexpected.exception");
                     localStorage.removeItem("access_token");
                     localStorage.removeItem("userId");
                 }
@@ -134,21 +158,11 @@ Ext.define('TimesSquare.view.login.LoginController', {
         user.save({
             failure: function (user, request) {
                 if (request.error.status == 401) {
-                    Ext.MessageBox.show({
-                        title: 'Error in Operation!',
-                        msg: 'Authentication failed: username or password invalid!',
-                        buttons: Ext.MessageBox.OK,
-                        icon: Ext.MessageBox.ERROR
-                    });
+                    TimesSquare.utils.Login.showException("iocc.sec.unexpected.exception", "Error in Operation!");
                     loginView.setLoading(false);
                 }
                 else {
-                    Ext.MessageBox.show({
-                        title: 'Error in Service!',
-                        msg: 'An unexpected error occurred while trying to process your request!<br/>Please try again or notify the system administrator if the problem persists!',
-                        buttons: Ext.MessageBox.OK,
-                        icon: Ext.MessageBox.ERROR
-                    });
+                    TimesSquare.utils.Login.showException("iocc.sec.unexpected.exception");
                     loginView.setLoading(false);
                 }
             },
